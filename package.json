@@ -2,9 +2,16 @@
   "name": "moncompte",
   "description": "moncompte lib",
   "author": {
-    "email": "johan.rouve@kisio.org",
-    "name": "Johan Rouve"
+      "name": "Johan Rouve",
+      "email": "johan.rouve@kisio.org",
   },
+  "contributors": [
+    {
+      "name": "Jean-Baptiste Crestot",
+      "email": "jean-baptiste.crestot@kisio.org",
+      "role": "Developer"
+    }
+  ],
   "version": "1.0.0",
   "license": "AGPL-3.0",
   "devDependencies": {
