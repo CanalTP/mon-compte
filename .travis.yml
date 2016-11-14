@@ -3,4 +3,5 @@ node_js:
   - "0.10"
 before_install:
   - npm install -g mocha
+after_script:
   - babel -d lib/ src/

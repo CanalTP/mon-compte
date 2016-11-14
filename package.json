@@ -2,14 +2,13 @@
   "name": "moncompte",
   "description": "moncompte lib",
   "author": {
-      "name": "Johan Rouve",
-      "email": "johan.rouve@kisio.org",
+    "name": "Johan Rouve",
+    "email": "johan.rouve@kisio.org"
   },
   "contributors": [
     {
       "name": "Jean-Baptiste Crestot",
-      "email": "jean-baptiste.crestot@kisio.org",
-      "role": "Developer"
+      "email": "jean-baptiste.crestot@kisio.org"
     }
   ],
   "version": "1.0.0",
