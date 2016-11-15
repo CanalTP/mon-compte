@@ -1,10 +1,7 @@
 import chai, { assert } from 'chai';
-import sinonChai from 'sinon-chai';
 import sinon from 'sinon';
 import OAuthClient from './../OAuthClient';
 import HttpError from './../HttpError';
-
-chai.use(sinonChai);
 
 describe('OAuthClient', function() {
     describe('login', function() {

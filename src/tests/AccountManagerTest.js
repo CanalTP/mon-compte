@@ -1,10 +1,7 @@
 import chai, { assert } from 'chai';
-import sinonChai from 'sinon-chai';
 import sinon from 'sinon';
 import AccountManager from './../AccountManager';
 import Account, {TYPE_VIRGIN, TYPE_ANONYMOUS, TYPE_STANDARD} from './../Account';
-
-chai.use(sinonChai);
 
 describe('AccountManager', function() {
     describe('hasAccount', function() {
