@@ -1,0 +1,1 @@
+# mon-compte [![Build Status](https://travis-ci.org/CanalTP/mon-compte.svg?branch=master)](https://travis-ci.org/CanalTP/mon-compte)
