@@ -28,8 +28,8 @@ export default class OAuthClient {
         }, {
             body : {
                 grant_type: 'password',
-                userName: username,
-                userPassword: password
+                username: username,
+                password: password
             },
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',

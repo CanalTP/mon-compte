@@ -34,8 +34,8 @@ describe('OAuthClient', function() {
                 assert.deepEqual(stub.getCall(0).args[2], {
                     body: {
                         grant_type: 'password',
-                        userName: userName,
-                        userPassword: userPassword
+                        username: userName,
+                        password: userPassword
                     },
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded',
