@@ -54,14 +54,19 @@ export default class AccountManager {
     *
     */
     login(email, password, next){
-        this.OAuthClient.login(email, password, (err, data) => {
+        this.OAuthClient.login(email, password, (err, account) => {
+            let data = null;
             if (!err) {
+                this.account.email = email;
+                this.account.password = password;
                 this.account.type = TYPE_STANDARD;
-                this.account.accessToken = data.access_token;
-                this.account.refreshToken = data.refresh_token;
+                this.account.accessToken = account.access_token;
+                this.account.refreshToken = account.refresh_token;
+
+                data = this.account;
             }
 
-            next(err, this.account);
+            next(err, data);
         });
     };
 
