@@ -33,8 +33,12 @@ describe('AccountManager', function() {
             let OauthMock = {
                 login: stub
             };
+            let username = 'jgozo';
+            let password = 'secretpass';
             let accountManager = new  AccountManager(OauthMock);
-            accountManager.login('jgozo', 'jgozo', function(err, account) {
+            accountManager.login(username, password, function(err, account) {
+                assert.equal(account.email, username);
+                assert.equal(account.password, password);
                 assert.equal(account.type, TYPE_STANDARD);
                 assert.equal(account.accessToken, wsData.access_token);
                 assert.equal(account.refreshToken, wsData.refresh_token);
@@ -54,10 +58,9 @@ describe('AccountManager', function() {
                 login: stub
             };
             let accountManager = new  AccountManager(OauthMock);
-            let accountClone = Object.assign(accountManager.account);
-            accountManager.login('jgozo', 'jgozo', function(err, account) {
+            accountManager.login('jgozo', 'secretpass', function(err, account) {
                 assert.isNotNull(err);
-                assert.equal(accountClone, account);
+                assert.isNull(account);
 
                 done();
             });
